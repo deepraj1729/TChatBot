@@ -6,8 +6,8 @@
 A ChatBot framework to make customizable all purpose Chatbots using NLP, Tensorflow, Speech Recognition 
 
 # Updates:
-1. Updated to pypi with stable release.
-2. Will be updated to conda soon.
+### 1. Released to `pypi` with stable release.
+### 2. Will be updated to `conda` soon.
 
 # Basic Requirements: 
 1. RAM > 4GB (For training the model)
