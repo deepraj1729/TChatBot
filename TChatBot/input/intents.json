@@ -1,0 +1,126 @@
+{
+   "intents": [
+      {
+         "tag": "greeting",
+         "patterns": [
+            "Hi",
+            "How are you",
+            "Is anyone there?",
+            "Hello",
+            "Good day",
+            "Whats up",
+            "Hi there",
+            "Hey!",
+            "Hi, Sup?"
+         ],
+         "responses": [
+            "Hello!",
+            "I'm doing good",
+            "Good to see you again!",
+            "Hi there, how can I help?",
+            "Can I help You?",
+            "Yoo! Whatsup?"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "goodbye",
+         "patterns": [
+            "cya",
+            "See you later",
+            "Goodbye",
+            "I am Leaving",
+            "Have a Good day",
+            "ba byee"
+         ],
+         "responses": [
+            "Sad to see you go :(",
+            "Talk to you later",
+            "Goodbye!",
+            "Byeee",
+            "See ya",
+            "See ya later",
+            "will see ya later"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "age",
+         "patterns": [
+            "how old",
+            "how old is TensorChat",
+            "what is your age",
+            "how old are you",
+            "age?",
+            "Can I know your age"
+         ],
+         "responses": [
+            "I am 12 years old!",
+            "12 years young!",
+            "Hi there, I am 12 years young",
+            "Yoo! I am 12 years old",
+            "My age! It's 12 Yo!"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "name",
+         "patterns": [
+            "what is your name",
+            "what should I call you",
+            "whats your name?"
+         ],
+         "responses": [
+            "You can call me TensorChatBot, call me TCBot.",
+            "I'm TensorChatBot call me TCBot.",
+            "I'm TCBot aka TensorChatBot."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "shop",
+         "patterns": [
+            "Id like to buy something",
+            "whats on the menu",
+            "what do you recommend for buying?",
+            "could i get something to eat",
+            "What should I buy?"
+         ],
+         "responses": [
+            "We sell chocolate chip cookies for $2!",
+            "Cookies are on the menu!",
+            "Cookies are our favourite item"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "hours",
+         "patterns": [
+            "when are you guys open",
+            "what are your hours",
+            "hours of operation",
+            "When is the shop open?",
+            "When does the shop open?"
+         ],
+         "responses": [
+            "We are open 7am-4pm Monday-Friday!"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "wish",
+         "patterns": [
+            "Good Morning",
+            "Good afternoon",
+            "Good evening",
+            "happy birthday"
+         ],
+         "responses": [
+            "Hey! Good morning",
+            "Hey! sup?",
+            "Sup?",
+            "Thanks! Have a great day"
+         ]
+      }
+   ]
+}

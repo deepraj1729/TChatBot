@@ -1,0 +1,5 @@
+tensorflow-cpu==1.15
+numpy==1.17
+nltk==3.4.5
+prettytable==0.7.2
+sklearn==0.0
