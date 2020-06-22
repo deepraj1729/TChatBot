@@ -71,7 +71,7 @@ A ChatBot framework to make customizable all purpose Chatbots using NLP, Tensorf
 # Usage:
 ### (Must run within the virtual environment):
 
-### Chat with TensorChat Bot:
+### Chat with TChatBot:
 
         tchatbot -chat
 
