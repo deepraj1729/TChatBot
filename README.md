@@ -96,7 +96,7 @@ A ChatBot framework to make customizable all purpose Chatbots using NLP, Tensorf
         tchatbot -h
 
 
-# Installation for developer's 
+# Installation for developers 
 ### (Must run within the virtual environment):
 
 ## (b): By Clonining this Repository ,following the steps:
@@ -123,7 +123,7 @@ A ChatBot framework to make customizable all purpose Chatbots using NLP, Tensorf
 ## Congrats, You installed all the required dependencies :) 
 
 
-# Usage (for Developer's or Contributors):
+# Usage (for Developers or Contributors):
 ### (inside the virtual environment)
 
 ### a. Chat with TChatBot:
