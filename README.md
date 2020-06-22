@@ -47,7 +47,7 @@ A ChatBot framework to make customizable all purpose Chatbots using NLP, Tensorf
 
 ### (1.c) `(Demo)` in the left of terminal indicates that the environment is activated
 
-### 2. Create virtual environment (for conda users only), skip if above step is done: 
+### 2. Create virtual environment (for conda users only), skip if step 1 is done: 
 
         conda create -n TChatBot
 
