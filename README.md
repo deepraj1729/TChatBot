@@ -106,15 +106,15 @@ A ChatBot framework to make customizable all purpose Chatbots using NLP, Tensorf
 ### 2. Once done, clone the repository inside the `Demo` folder (with activated virtual environment)
 #### a. Using HTTPS:
 
-        git clone https://github.com/deepraj1729/TensorChat.git
+        git clone https://github.com/deepraj1729/TChatBot.git
 
 #### b. Using SSH:
 
-        git clone git@github.com:deepraj1729/TensorChat.git
+        git clone git@github.com:deepraj1729/TChatBot.git
 
-### 3. Navigate to the `TChatBot` folder command-line:
+### 3. Navigate to the `TChatBot` folder (Parent folder) command-line:
         
-        cd TensorChat
+        cd TChatBot
 
 ### 4. Install the requirements from the activated environment:
 
