@@ -35,7 +35,7 @@ A ChatBot framework to make customizable all purpose Chatbots using NLP, Tensorf
 ## Choose any one of the above 2 steps based on conda or non-conda users
 ### 1. Install virtualenv using `pip` (for both non-conda and conda users)
 
-        pip install virtualenv>=20.0.14
+        pip install virtualenv==20.0.14
         
 ### (1.a) Run the command to create virtual environment: 
 
