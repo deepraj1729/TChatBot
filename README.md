@@ -65,27 +65,91 @@ A ChatBot framework to make customizable all purpose Chatbots using NLP, Tensorf
 ### Congrats, You installed all the required dependencies :) 
 
 # Usage:
-#### (Must run within the virtual environment):
+### (Must run within the virtual environment):
 
 ### Chat with TensorChat Bot:
 
-        tchat -chat
+        tchatbot -chat
 
 ### Train the Chatbot:
 
-        tchat -train
+        tchatbot -train
 
 ### Create Custom Dataset commandline
 
-        tchat -create
+        tchatbot -create
+
+### Check Current classes trained
+
+        tchatbot -classes
 
 ### Check Model Pipeline Configurations
 
-        tchat --config
+        tchatbot --config
 
 ### Check Version:
         
-        tchat -v
+        tchatbot -v
+
+### For any help/guidance regarding commands:
+
+        tchatbot -h
+
+
+# Installation for developer's 
+### (Must run within the virtual environment):
+
+## (b): By Clonining this Repository ,following the steps:
+
+### 1. Setup the Pre-Requisites as given above (without installing the `TChatBot` package)
+
+### 2. Once done, clone the repository inside the `Demo` folder (with activated virtual environment)
+#### a. Using HTTPS:
+
+        git clone https://github.com/deepraj1729/TensorChat.git
+
+#### b. Using SSH:
+
+        git clone git@github.com:deepraj1729/TensorChat.git
+
+### 3. Navigate to the `TChatBot` folder command-line:
+        
+        cd TensorChat
+
+### 4. Install the requirements from the activated environment:
+
+        pip install -r requirements.txt 
+
+## Congrats, You installed all the required dependencies :) 
+
+
+# Usage (for Developer's or Contributors):
+### (inside the virtual environment)
+
+### a. Chat with TChatBot:
+
+        python main.py -chat
+
+### b. Train the TChatbot:
+
+        python main.py -train
+
+### c. Create Custom Dataset command-line for retraining the Bot
+
+        python main.py -create
     
+### Check Current classes trained
 
+        python main.py -classes
 
+### Check Model Pipeline Configurations
+
+        python main.py --config
+
+### Check Version:
+        
+        python main.py -v
+
+### For any help regarding commands:
+
+        python main.py -h
