@@ -15,7 +15,7 @@ A ChatBot framework to make customizable all purpose Chatbots using NLP, Tensorf
 - GPU RAM >=4 GB (optional)
 - Python >= 3.5
 
-# Installation
+# Installation:
 
 (a). Install using `pip` 
 (b). Clone the repository (dev testing)
