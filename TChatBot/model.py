@@ -91,7 +91,7 @@ class ChatBotModel:
         t_tot = PrettyTable(['Sl.No.', 'Argmax Value','Expected Value','Predicted Tag','Expected Tag','Result'])
         for i in range(len(predict)):
             argMax = np.argmax(predict[i])
-            tag = classes[argMax]
+            tag = self.classes[argMax]
             result = "Correct" if y[i] == argMax else "Wrong"
             t_tot.add_row([i+1,argMax,y[i],tag,y[i],result])
 
@@ -115,7 +115,7 @@ class ChatBotModel:
         for i in range(len(predict)):
             argMax = np.argmax(predict[i])
             tag_indices.append(argMax)
-            tag = classes[argMax]
+            tag = self.classes[argMax]
             tags.append(tag)
             t_pred.add_row([i+1,argMax,tag])
         print(t_pred)
