@@ -20,8 +20,7 @@
             "Hi there, how can I help?",
             "Can I help You?",
             "Yoo! Whatsup?"
-         ],
-         "context_set": ""
+         ]
       },
       {
          "tag": "goodbye",
@@ -41,8 +40,7 @@
             "See ya",
             "See ya later",
             "will see ya later"
-         ],
-         "context_set": ""
+         ]
       },
       {
          "tag": "age",
@@ -60,8 +58,7 @@
             "Hi there, I am 12 years young",
             "Yoo! I am 12 years old",
             "My age! It's 12 Yo!"
-         ],
-         "context_set": ""
+         ]
       },
       {
          "tag": "name",
@@ -74,8 +71,7 @@
             "You can call me TensorChatBot, call me TCBot.",
             "I'm TensorChatBot call me TCBot.",
             "I'm TCBot aka TensorChatBot."
-         ],
-         "context_set": ""
+         ]
       },
       {
          "tag": "shop",
@@ -90,8 +86,7 @@
             "We sell chocolate chip cookies for $2!",
             "Cookies are on the menu!",
             "Cookies are our favourite item"
-         ],
-         "context_set": ""
+         ]
       },
       {
          "tag": "hours",
@@ -104,8 +99,7 @@
          ],
          "responses": [
             "We are open 7am-4pm Monday-Friday!"
-         ],
-         "context_set": ""
+         ]
       },
       {
          "tag": "wish",
