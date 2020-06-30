@@ -10,14 +10,15 @@ A ChatBot framework to make customizable all purpose Chatbots using NLP, Tensorf
 ### 2. Will be updated to `conda` soon.
 
 # Basic Requirements: 
-1. RAM > 4GB (For training the model)
-2. Storage Space > 200MB
-3. GPU RAM >=4 GB (optional)
-4. Python >= 3.5
+- RAM > 4GB (For training the model)
+- Storage Space > 200MB
+- GPU RAM >=4 GB (optional)
+- Python >= 3.5
 
-# Installation
+# Installation:
 
 (a). Install using `pip` 
+
 (b). Clone the repository (dev testing)
 
 ## (a) Install Using `pip`:
@@ -28,13 +29,13 @@ A ChatBot framework to make customizable all purpose Chatbots using NLP, Tensorf
 
 
 ## Setting up the Pre-Requisites:
-### Step 1: Create an empty folder say `Demo`.
+### 1: Create an empty folder say `Demo`.
 
-### Step 2: Open the folder and open terminal from that folder location.
+### 2: Open the folder and open terminal from that folder location.
 
-### Step 3: Create Virtual Environment
-1. Either Using `virtualenv` (strictly for non-conda users, optional for conda users)
-2. Or Using conda (for conda users only)
+### 3: Create Virtual Environment
+- Step 1: Either Using `virtualenv` (strictly for non-conda users, optional for conda users)
+- Step 2: Or Using conda (for conda users only)
 
 ## Choose any one of the above 2 steps based on conda or non-conda users
 ### 1. Install virtualenv using `pip` (for both non-conda and conda users)
@@ -51,7 +52,7 @@ A ChatBot framework to make customizable all purpose Chatbots using NLP, Tensorf
 
 ### (1.c) `(Demo)` in the left of terminal indicates that the environment is activated
 
-### 2. Create virtual environment (for conda users only), skip if step 1 is done: 
+### 2. Create virtual environment (for conda users only), skip if Step 1 is done: 
 
         conda create -n TChatBot
 
@@ -71,7 +72,7 @@ A ChatBot framework to make customizable all purpose Chatbots using NLP, Tensorf
 # Usage:
 ### (Must run within the virtual environment):
 
-### Chat with TensorChat Bot:
+### Chat with TChatBot:
 
         tchatbot -chat
 
