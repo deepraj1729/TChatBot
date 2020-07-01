@@ -17,9 +17,24 @@
             "can you taste food?"]
     },
     {
-        "tag":"temperature",
-        "pattern":["I have 99","I have 100","I have high fever","I have 101","I have 102"],
-        "resposnes":["Seems like a problem","Lets check for cough","Any signs of breathlessness","Any pains in body"]
+        "tag":"temperature_99",
+        "pattern":["I have 99","99","99.1","99.2","99.3","99.4","99.5"],
+        "resposnes":["Seems like a problem","Lets check for cough","Any signs of breathlessness","Any pains in body","Its more like some inflammation"]
+    },
+    {
+        "tag":"temperature_100",
+        "pattern":["I have 100","99.6","99.7","99.8","99.9","100.1","100","100.2","100.3","100.4","100.5"],
+        "responses":["Could be seen as becoming a problem","Consulting a doctor should be an option","Lets check for cough","Any signs of breathlessness","Any pains in body"]
+    },
+    {
+        "tag":"temperature_101",
+        "pattern":["I have 101","101.1","101","101.2","101.3","101.4","101.5","100.6","100.7","100.8","100.9"],
+        "responses":["Its a getting a serious problem now","Get yourself tested now","Consulting a doctor should be an option","Lets check for cough","Any signs of breathlessness","Any pains in body"]
+    },
+    {
+        "tag":"temperature_highfever",
+        "pattern":["I have 102","I have 103","I have 104","102","103","104"],
+        "responses":["This needs to addressed now","Immediate action required!","Get yourself tested now","Consulting a doctor should be an option","Lets check for cough","Any signs of breathlessness","Any pains in body"]
     },
     {
         "tag":"cough",
