@@ -5,8 +5,9 @@ from tensorflow.python.util import deprecation
 #Avoid Deprecation warnings
 deprecation._PRINT_DEPRECATION_WARNINGS = False
 import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Input, Dense, BatchNormalization, Flatten, Conv1D, AveragePooling1D, MaxPooling1D, Dropout
 from sklearn import model_selection
-from tensorflow import keras
 import numpy as np
 from TChatBot.funcs import getClasses,bagOfWords
 from TChatBot.generate import clearScreen
@@ -16,9 +17,13 @@ import time
 from pathlib import Path
 
 
+
 dir_path = os.path.dirname(os.path.realpath(__file__))
 root = Path(dir_path)
-saved_model_path = root / "saved_model" / "model.h5"
+
+saved_model_path = root / "saved_model" 
+model_name = "TChatBot"
+model_version = "v1"
 
 
 #Model
@@ -42,13 +47,22 @@ class ChatBotModel:
         inp_shape = len(x[0])
         x_train ,x_test , y_train, y_test = model_selection.train_test_split(x,y, test_size = test_size)
 
-        self.model = tf.keras.models.Sequential()
-        self.model.add(tf.keras.layers.Flatten(input_shape=(inp_shape,)))
-        self.model.add(tf.keras.layers.Dense(300,activation = "relu"))
-        self.model.add(tf.keras.layers.Dense(200,activation = "relu"))
-        self.model.add(tf.keras.layers.Dense(40,activation = "relu"))
-        # model.add(tf.keras.layers.Dense(10,activation = "relu"))
-        self.model.add(tf.keras.layers.Dense(len(self.classes),activation = "sigmoid"))
+        """DNN Architecture"""
+        self.model = Sequential()
+        self.model.add(Flatten(input_shape=(inp_shape,)))
+        self.model.add(Dense(300,activation = "relu"))
+        self.model.add(Dense(200,activation = "relu"))
+        self.model.add(Dense(40,activation = "relu"))
+        self.model.add(Dense(len(self.classes),activation = "sigmoid"))
+
+        """CNN Architecture"""
+        # self.model = Sequential()
+        # self.model.add(Conv1D(filters=64, kernel_size=1, activation='relu', input_shape=inp_shape))
+        # self.model.add(Conv1D(filters=32, kernel_size=1, activation='relu'))
+        # self.model.add(MaxPooling1D(pool_size=1))
+        # self.model.add(Flatten())
+        # self.model.add(Dense(100, activation='relu'))
+        # self.model.add(Dense(len(self.classes), activation='sigmoid'))
 
         self.model.compile(optimizer = "adam",
             loss = 'sparse_categorical_crossentropy',
@@ -63,12 +77,20 @@ class ChatBotModel:
 
         self.model.fit(x_train ,y_train , epochs =epochs,batch_size = batch_size)
 
-        self.model.save(saved_model_path)
-        print("\n\n-----+-----+-----+-----+-----+-----+-----+------+------+-----+------+------")
-        print("                         Saving trained Model......")
-        print("-----+-----+-----+-----+-----+-----+-----+------+------+-----+------+------")
-        print("Model saved in disc as \'model.h5\' file in path: {}".format(saved_model_path))
-        print("-----+-----+-----+-----+-----+-----+-----+------+------+-----+------+------\n")
+        path_to_model = saved_model_path / model_name
+        path = os.path.join(path_to_model,model_version) 
+
+        try:  
+            os.makedirs(path, exist_ok = True)
+            tf.saved_model.save(self.model,path)
+
+            print("\n\n-----+-----+-----+-----+-----+-----+-----+------+------+-----+------+------")
+            print("                         Saving trained Model version {}......".format(model_version))
+            print("-----+-----+-----+-----+-----+-----+-----+------+------+-----+------+------")
+            print("Model saved in disc as \'saved_model.pb\' file in path: {}".format("saved_model/{}".format(model_name)+"/"+model_version))
+            print("-----+-----+-----+-----+-----+-----+-----+------+------+-----+------+------\n")  
+        except OSError as error:  
+            print("Path already exists") 
 
     def validateModel(self,x,y):
         print("\n\nValidating Model")

@@ -1,0 +1,79 @@
+{
+"intents":[
+    {
+    "tag":"Greet",
+    "patterns":["Hello","Hey","How are you","Whatsup","Hi","Howdy","Good Day"],
+    "responses":["I am great","Fantastic","Fine","Awesome","Great to have you back","How have you been"]
+    },
+    {
+        "tag":"check",
+        "patterns":["I doubt I might have corona","I doubt I might have covid","I doubt I might have coronavirus"],
+        "responses":["Lets check for symptoms","Symptoms?","Did you visit any covid patient","Did you come in contact to any person"]
+    },
+    {
+        "tag":"fever",
+        "patterns":["I have fever","I feel my arms are warm","I feel dizzy"],
+        "responses":["Do you have a temperature","Do you have cough","Are you suffering from breathlessness","Do you have body pain",
+            "can you taste food?"]
+    },
+    {
+        "tag":"temperature_99",
+        "pattern":["I have 99","99","99.1","99.2","99.3","99.4","99.5"],
+        "resposnes":["Seems like a problem","Lets check for cough","Any signs of breathlessness","Any pains in body","Its more like some inflammation"]
+    },
+    {
+        "tag":"temperature_100",
+        "pattern":["I have 100","99.6","99.7","99.8","99.9","100.1","100","100.2","100.3","100.4","100.5"],
+        "responses":["Could be seen as becoming a problem","Consulting a doctor should be an option","Lets check for cough","Any signs of breathlessness","Any pains in body"]
+    },
+    {
+        "tag":"temperature_101",
+        "pattern":["I have 101","101.1","101","101.2","101.3","101.4","101.5","100.6","100.7","100.8","100.9"],
+        "responses":["Its a getting a serious problem now","Get yourself tested now","Consulting a doctor should be an option","Lets check for cough","Any signs of breathlessness","Any pains in body"]
+    },
+    {
+        "tag":"temperature_highfever",
+        "pattern":["I have 102","I have 103","I have 104","102","103","104"],
+        "responses":["This needs to addressed now","Immediate action required!","Get yourself tested now","Consulting a doctor should be an option","Lets check for cough","Any signs of breathlessness","Any pains in body"]
+    },
+    {
+        "tag":"cough",
+        "pattern":["Yes, I have dry cough","No, I dont have"],
+        "responses":["Might be a problem","Lets check for other symptoms","Are you suffering from breathlessness","Body pains?"]
+    },
+    {
+        "tag":"breathlessness",
+        "pattern":["Yes, I have difficulty","no, I don't have any problem","feels heavyness"],
+        "responses":["You need to check with hospital immediately","You may get tested","Get home quarantined","Check for body pains?"]
+    },
+    {
+        "tag":"body_pain",
+        "pattern":["I have body pain","I dont have any pain","My hands pain","My legs are paining","My torso is paining"],
+        "responses":["Seems like a problem","Cough?","Are you suffering from breathlessness","Get home quarantined"]
+    },
+    {
+        "tag":"precaution",
+        "pattern":["What precautions can be taken?","how can corona be prevented?","how to be safe","Any other tip"],
+        "responses":["Wear mask","Wear gloves","Wash hands","Social distancing","Avoid unnecessary travels"]
+    },
+    {
+        "tag":"hospital",
+        "pattern":["Can you suggest where can I go for treatment","treatment is required"],
+        "responses":["which city do live in"]
+    },
+    {
+        "tag":"Delhi",
+        "pattern":["I live in Delhi","Delhi","I reside in Delhi"],
+        "responses":["Lok Nayak Hospital and GB Pant Hospital * (Jawahar Lal Nehru Marg,Delhi - 110002)\nRajiv Gandhi Super Speciality Hospital (Tahirpur, New Delhi - 110064)\nGuru Tegh Bahadur Hospital (Shahdara,Delhi - 110095)\n Deen Dayal Upadhyay Hospital (Hari Nagar, New Delhi - 110064)\n Dr Baba Saheb Ambedkar Hospital (Sector 6, Rohini, New Delhi - 110085)"]
+    },
+    {
+        "tag":"Mumbai",
+        "pattern":["I live in Mumbai","Mumbai","I reside in Mumbai"],
+        "responses":["1) Dr Babasaheb Ambedkar Hospital\n 2) Seven Hills Hospital\n3) Hinduhridaysamrat Balasaheb Thackerey Medical College & RN Cooper Municipal Hospital \n4) Rajawadi Hospital\n5) Kurla Bhabha Hospital \n 6) Khushedji Behramji Bhabha Hospital \n7) KEM Hospital \n 8) Kasturba Hospital \n 9) BYL Nair Hospital \n 10) Sir JJ Group of Hospitals \n11) Mumbai Port Trust Hospital \n12) Bharat Ratna Dr Babasaheb Ambedkar Memorial Hospital \n13) Jagjivan Ram Hospital"]
+    },
+    {
+        "test":"test",
+        "pattern":["Can you suggest where can I go for testing","Where testing is done"],
+        "responses":["You can approach private labs and hospitals in your respective state for testing"]
+    }]
+}

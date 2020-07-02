@@ -7,9 +7,13 @@ import os
 dir_path = os.path.dirname(os.path.realpath(__file__))
 root = Path(dir_path)
 
+saved_model_dir = "saved_model" 
+model_name = "TChatBot"
+model_version = "v1"
+
 def RunChatBot():
     #model path
-    model_path = root / "saved_model" / "model.h5"
+    model_path = "TChatBot/" + saved_model_dir + "/" + model_name + "/" + model_version
 
     model = ChatBotModel()
     
