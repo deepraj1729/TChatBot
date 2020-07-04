@@ -10,9 +10,10 @@ from TChatBot.train import TrainChatBot
 from TChatBot.chat import RunChatBot
 from TChatBot.generate import generateData,currentTags
 from TChatBot.config import modelConfig
+from TChatBot.architectures import showArchitectures
 import argparse
 
-version = '0.1.0'
+version = '0.1.1'
 
 def main():
     #parsing commadline args
@@ -30,6 +31,9 @@ def main():
     """  Train ChatBot  """
     parser.add_argument('-train',action='store_true',help = "Train TChatBot based on given input")
 
+    """  Choose architecture  """
+    parser.add_argument('-arch',type = str,help = "Architecture for training and testing model")
+
     """  Create Dataset  """
     parser.add_argument('-create',action='store_true',help = "Create dataset for training Bot")
 
@@ -37,22 +41,24 @@ def main():
     parser.add_argument('-classes',action='store_true',help = "TChatBot classes trained till now")
 
     """  Model Configuration  """
-    parser.add_argument('--config',action='store_true',help = "TChatBot Model configuration or pipeline")
+    parser.add_argument('-config',action='store_true',help = "TChatBot Model configuration or pipeline")
 
 
     args = parser.parse_args()
+    arch = args.arch
     try:
         if(args.chat == True):
-            RunChatBot()
+            RunChatBot(arch=arch)
         elif(args.train == True):
-            TrainChatBot(epochs = 100,test_size = 0.1,batch_size = 8)
+            TrainChatBot(epochs = 100,test_size = 0.1,batch_size = 10,arch=arch)
         elif(args.create == True):
             generateData()
         elif(args.config == True):
-            modelConfig()
-        elif(args.classes == True):
+            modelConfig(arch=arch)
+        elif(args.classes == True):                                                                                                                                                                                             
             currentTags()
-            
+        elif(arch == "show"):
+            showArchitectures()
     except ImportError as i:
         print("Oops some error occurred")
         print(i)
