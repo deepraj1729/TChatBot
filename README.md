@@ -2,9 +2,12 @@
 [![pull](https://img.shields.io/badge/pull--requests-requests-green)](https://github.com/deepraj1729/TChatBot/pulls) [![issues](https://img.shields.io/badge/issues-issues-red)](https://github.com/deepraj1729/TChatBot/issues) ![python](https://img.shields.io/badge/python-3.5%20%7C%203.6%20%7C%203.7-blue)
 
 
-# TChatBot
+# TChatBot:
+![logo](assets/final-logo.png)
 A ChatBot framework to make customizable all purpose Chatbots using NLP, Tensorflow, Speech Recognition 
 
+# Deployment Architecture:
+![arch](assets/architecture.png)
 # Updates:
 ### 1. Released to `pypi` with stable release.
 ### 2. Will be updated to `conda` soon.
