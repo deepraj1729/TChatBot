@@ -1,8 +1,6 @@
 [![TChatBot](https://img.shields.io/badge/TChatBot-v0.1.0-blue)](https://pypi.org/project/TChatBot/0.1.0/)  [![license](https://img.shields.io/badge/License-MIT-yellow)](https://github.com/deepraj1729/TChatBot/blob/master/LICENSE) [![dependencies](https://img.shields.io/badge/dependencies-packages-orange)](https://github.com/deepraj1729/TChatBot/blob/master/requirements.txt)
 [![pull](https://img.shields.io/badge/pull--requests-requests-green)](https://github.com/deepraj1729/TChatBot/pulls) [![issues](https://img.shields.io/badge/issues-issues-red)](https://github.com/deepraj1729/TChatBot/issues) ![python](https://img.shields.io/badge/python-3.5%20%7C%203.6%20%7C%203.7-blue)
 
-
-# TChatBot:
 ![logo](assets/final-logo.png)
 A ChatBot framework to make customizable all purpose Chatbots using NLP, Tensorflow, Speech Recognition 
 
