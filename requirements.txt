@@ -1,5 +1,5 @@
 tensorflow-cpu==2.1.2
-numpy==1.17
+numpy==1.22.0
 nltk==3.4.5
 prettytable==0.7.2
 sklearn==0.0
