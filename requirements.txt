@@ -1,4 +1,4 @@
-tensorflow-cpu==2.1.2
+tensorflow-cpu==2.11.1
 numpy==1.17
 nltk==3.4.5
 prettytable==0.7.2
